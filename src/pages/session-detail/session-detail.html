@@ -5,17 +5,5 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>{{session.name}}</h1>
-
-  <h4 *ngFor="let speaker of session.speakers">
-    {{speaker.name}}
-  </h4>
-
-  <p>
-    {{session.timeStart}} - {{session.timeEnd}}
-  </p>
-
-  <p>{{session.location}}</p>
-
-  <p>{{session.description}}</p>
+  <session-info [session]="session"></session-info>
 </ion-content>
